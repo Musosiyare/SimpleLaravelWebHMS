@@ -55,8 +55,8 @@
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     
-                                    <a  class="dropdown-item"  href="{{ route('patient.create') }}">Create Patient</a>
-                                    <a  class="dropdown-item"  href="{{ route('patient.index') }}">All Patients</a>
+                                    <a  class="dropdown-item"  href="{{ route('patient.create') }}">Create Student</a>
+                                    <a  class="dropdown-item"  href="{{ route('patient.index') }}">All Students</a>
                                     
                                     
                                     <a class="dropdown-item" href="{{ route('logout') }}"

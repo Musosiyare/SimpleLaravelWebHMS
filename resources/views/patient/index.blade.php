@@ -3,11 +3,11 @@
 @section('content')
     {{-- @dd($patients) --}}
     <div>
-        <h1>Patients page</h1>
-
+        <h1>Students Page</h1>
+{{-- 
         <div class="my-2">
             @include('messages')
-        </div>
+        </div> --}}
 
         <div class="row">
             @foreach ($patients as $patient)
@@ -18,7 +18,7 @@
                             </h6>
                             <p class="card-text my-0">Email: {{ $patient->email }}</p>
                             <p class="card-text my-0">Telephone: {{ $patient->telephone }}</p>
-                            <p class="card-text my-0">Insurance id: {{ $patient->insurance_id }}</p>
+                            <p class="card-text my-0">Registration Number id: {{ $patient->insurance_id }}</p>
                             <p class="card-text my-0">Date registered: {{ $patient->created_at->diffForHumans() }}</p>
                             <p class="card-text my-0">Registered by: {{ Auth::user()->name }}</p>
                         </div>

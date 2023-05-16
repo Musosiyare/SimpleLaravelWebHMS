@@ -3,14 +3,14 @@
 @section('content')
     {{-- @dd($patients) --}}
     <div>
-        <h1>Create Patients page</h1>
+        <h1>Create Students Page</h1>
 
         <form action="{{ route('patient.store') }}" method="post">
-            <div class="row">
+            <div class="row bg-secondary text-white fw-bold">
 
                 <div class="col-md-6 mt-2">
                     <div class="form-group">
-                        <label for="">first name</label>
+                        <label for="">First name</label>
                         <input value="{{ old('fname') }}" type="text" class="form-control" name="fname" id="" aria-describedby="helpId"
                             placeholder="ex: John">
                         <small id="helpId" class="form-text text-danger">
@@ -23,7 +23,7 @@
 
                 <div class="col-md-6 mt-2">
                     <div class="form-group">
-                        <label for="">last name</label>
+                        <label for="">Last name</label>
                         <input value="{{ old('lname') }}"  type="text" class="form-control" name="lname" id="" aria-describedby="helpId"
                             placeholder="ex: Mereweneza">
                         <small id="helpId" class="form-text text-danger">
@@ -62,7 +62,7 @@
 
                 <div class="col-md-6 mt-2">
                     <div class="form-group">
-                        <label for="">Insurance id</label>
+                        <label for="">Registration Number</label>
                         <input value="{{ old('insurance') }}"  type="text" class="form-control" name="insurance" id="" aria-describedby="helpId"
                             placeholder="ex: 234567">
                         <small id="helpId" class="form-text text-danger">
@@ -74,7 +74,7 @@
                 </div>
 
                 <div class="col-md-12 mt-3">
-                    <button type="submit" class="btn btn-primary w-100">Save</button>
+                    <button type="submit" class="btn btn-success w-100">Create Student</button>
                 </div>
                 @csrf
 
