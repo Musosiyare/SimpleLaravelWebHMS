@@ -33,18 +33,18 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto gap-2">
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <li class="nav-item bg-black rounded">
+                                    <a class="nav-link text-white" href="{{ route('login') }}">{{ __('SignIn') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                <li class="nav-item bg-black rounded">
+                                    <a class="nav-link text-white" href="{{ route('register') }}">{{ __('SignUp') }}</a>
                                 </li>
                             @endif
                         @else
@@ -55,8 +55,8 @@
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     
-                                    <a  class="dropdown-item"  href="{{ route('patient.create') }}">Create Student</a>
-                                    <a  class="dropdown-item"  href="{{ route('patient.index') }}">All Students</a>
+                                    <a  class="dropdown-item"  href="{{ route('patient.create') }}">Create New Patient</a>
+                                    <a  class="dropdown-item"  href="{{ route('patient.index') }}">All Patients</a>
                                     
                                     
                                     <a class="dropdown-item" href="{{ route('logout') }}"

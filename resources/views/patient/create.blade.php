@@ -3,7 +3,7 @@
 @section('content')
     {{-- @dd($patients) --}}
     <div>
-        <h1>Create Students Page</h1>
+        <h1>Register New Patient</h1>
 
         <form action="{{ route('patient.store') }}" method="post">
             <div class="row bg-secondary text-white fw-bold">
@@ -62,7 +62,7 @@
 
                 <div class="col-md-6 mt-2">
                     <div class="form-group">
-                        <label for="">Registration Number</label>
+                        <label for="">Card Number</label>
                         <input value="{{ old('insurance') }}"  type="text" class="form-control" name="insurance" id="" aria-describedby="helpId"
                             placeholder="ex: 234567">
                         <small id="helpId" class="form-text text-danger">
@@ -74,7 +74,7 @@
                 </div>
 
                 <div class="col-md-12 mt-3">
-                    <button type="submit" class="btn btn-success w-100">Create Student</button>
+                    <button type="submit" class="btn btn-success w-100">Create Patient</button>
                 </div>
                 @csrf
 

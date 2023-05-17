@@ -1,20 +1,27 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="d-flex gap-5 flex-column justify-content-center align-items-center" style="height:80vh">
+<div class="d-flex gap-5 flex-column justify-content-center align-items-center" style="height:80vh">
 
-        <h1 class="text-secondary fw-bold">Welcome To Students Registration System</h1>
-        <p class="">
-            The student registration system is an essential component of educational institutions that streamlines the process of enrolling students into courses and programs. It serves as a centralized platform for managing student information, course availability, and academic records. This system simplifies and automates various tasks related to student registration, making it more efficient and convenient for both students and administrators.
+    <h1 class="text-secondary fw-bold">Welcome HCPRR</h1>
+    <p class="fs-5">
+        The system HCPRR in full is Health Center patient Registration Resolver i want to develop it for quick patient registration at a hospital will address the problem of
+        time-consuming and manual patient registration processes. Here's a small description of how the system could
+        work and the problem it will solve:
 
-            With a student registration system, students can easily browse available courses, select their desired classes, and register for them online. The system provides up-to-date information about course schedules, prerequisites, and availability, enabling students to make informed decisions during the registration process. It eliminates the need for manual paperwork, long queues, and potential errors that often occur with traditional registration methods.
-        </p>
-        <p>
-            <a href="{{ route('register') }}">
-                <button class="btn btn-lg btn-outline-primary px-5 rounded-pill">
-                    GET STARTED
-                </button>
-            </a>
-        </p>
-    </div>
+        The system will be a user-friendly software application accessible to hospital employees. When an employee needs
+        to register a patient, they will launch the application on a computer or mobile device.
+    </p>
+    <p class="fs-5">
+        
+        By implementing this system, the hospital employee will be able to register patients quickly and accurately, reducing the time and effort required for manual paperwork. It will streamline the patient registration process, minimize errors, and improve the overall efficiency of the hospital's administrative tasks. Additionally, the centralized storage and easy retrieval of patient records will enhance data management and facilitate better coordination of patient care within the hospital.
+    </p>
+    <p>
+        <a href="{{ route('register') }}">
+            <button class="btn btn-lg btn-outline-success px-5 rounded-pill fw-bold">
+                START
+            </button>
+        </a>
+    </p>
+</div>
 @endsection
